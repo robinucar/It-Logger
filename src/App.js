@@ -1,14 +1,23 @@
-import React, { useEffect } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
-// eslint-disable-next-line import/extensions
 import M from 'materialize-css/dist/js/materialize.min.js';
+import Searchbar from './components/layout/Searchbar';
+import Logs from './components/logs/Logs';
 import './App.css';
 
 const App = () => {
   useEffect(() => {
+    // init materialize JS
     M.AutoInit();
   });
-  return <div className="App">My App</div>;
+  return (
+    <Fragment>
+      <Searchbar />
+      <div className="container">
+        <Logs />
+      </div>
+    </Fragment>
+  );
 };
 
 export default App;

@@ -23,7 +23,11 @@ module.exports = {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/forbid-prop-types': [0, { forbid: ['any'] }],
     'react/prop-types': 0,
+    'jsx-a11y/label-has-associated-control': 'off',
+    'jsx-a11y/label-has-for': 'off',
+    'react/jsx-fragments': ['off', 'element'],
   },
+  // eslint-disable-next-line no-dupe-keys
   env: {
     jest: true,
     browser: true,
