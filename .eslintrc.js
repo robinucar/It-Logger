@@ -26,6 +26,7 @@ module.exports = {
     'jsx-a11y/label-has-associated-control': 'off',
     'jsx-a11y/label-has-for': 'off',
     'react/jsx-fragments': ['off', 'element'],
+    'no-use-before-define': 'off',
   },
   // eslint-disable-next-line no-dupe-keys
   env: {
