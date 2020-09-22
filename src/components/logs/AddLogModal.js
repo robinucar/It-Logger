@@ -9,7 +9,7 @@ const AddLogModal = () => {
   const onSubmit = () => {
     if (message === '' || tech === '') {
       M.toast({
-        html: 'Please enter a message and a tech',
+        html: 'Please enter a message and a tech...',
       });
     } else {
       console.log(message, tech, attention);
