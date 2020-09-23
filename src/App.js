@@ -13,14 +13,13 @@ import './App.css';
 
 import store from './redux/store';
 
-
 const App = () => {
   useEffect(() => {
     // init materialize JS
     M.AutoInit();
   });
   return (
-    <Provider store = { store }>
+    <Provider store={store}>
       <Fragment>
         <Searchbar />
         <div className="container">
