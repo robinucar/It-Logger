@@ -1,5 +1,13 @@
 {
-  "logs": [],
+  "logs": [
+    {
+      "id": 1,
+      "message": "cut",
+      "attention": true,
+      "tech": "Kathy Graham",
+      "date": "2020-09-24T20:29:20.824Z"
+    }
+  ],
   "techs": [
     {
       "id": 1,
