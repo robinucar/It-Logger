@@ -27,6 +27,11 @@ module.exports = {
     'jsx-a11y/label-has-for': 'off',
     'react/jsx-fragments': ['off', 'element'],
     'no-use-before-define': 'off',
+    'jsx-a11y/ key events': 'off',
+    'jsx-a11y/ no-static-element': 'off',
+    'jsx-a11y/ non-iteractive-element': 'off',
+
+
   },
   // eslint-disable-next-line no-dupe-keys
   env: {
