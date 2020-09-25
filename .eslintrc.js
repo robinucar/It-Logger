@@ -31,7 +31,6 @@ module.exports = {
     'jsx-a11y/ no-static-element': 'off',
     'jsx-a11y/ non-iteractive-element': 'off',
 
-
   },
   // eslint-disable-next-line no-dupe-keys
   env: {

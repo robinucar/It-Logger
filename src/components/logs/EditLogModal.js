@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import M from 'materialize-css/dist/js/materialize.min.js';
+import TechSelectOptions from '../techs/TechSelectOptions';
 import { updateLog } from '../../redux/actions/logActions';
 
 const EditLogModal = ({ current, updateLog }) => {
@@ -67,9 +68,7 @@ const EditLogModal = ({ current, updateLog }) => {
               <option value="" disabled>
                 Select Technician
               </option>
-              <option value="Mehmet Ucar">Mehmet Ucar</option>
-              <option value="Kathy Graham">Kathy Graham</option>
-              <option value="Robin Leo Graham">Robin Leo Graham</option>
+              <TechSelectOptions />
             </select>
           </div>
         </div>
@@ -82,7 +81,7 @@ const EditLogModal = ({ current, updateLog }) => {
                   className="field-in"
                   checked={attention}
                   value={attention}
-                  onChange={(e) => setAttention(!attention)}
+                  onChange={() => setAttention(!attention)}
                 />
                 <span>Needs Attention</span>
               </label>
